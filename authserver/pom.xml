@@ -3,21 +3,32 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sielcode</groupId>
   <artifactId>authserver</artifactId>
-  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>authserver</name>
   <url>http://maven.apache.org</url>
 
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.3.4</version>
+    <relativePath/>
+  </parent>
+
+  <packaging>pom</packaging>
+
   <modules>
     <module>app</module>
+    <module>infrastructure</module>
   </modules>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.8.0</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 </project>

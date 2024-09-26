@@ -1,4 +1,4 @@
-package com.sielcode;
+package com.sielcode.authserver;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
