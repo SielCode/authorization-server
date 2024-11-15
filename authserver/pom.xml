@@ -19,6 +19,7 @@
   <modules>
     <module>app</module>
     <module>infrastructure</module>
+    <module>rest</module>
   </modules>
 
   <dependencyManagement>
